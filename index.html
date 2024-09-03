@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfoloio</title>
+    <script src="https://kit.fontawesome.com/1acc44513e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav><h1 class="logo">Portfolio</h1>
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>
+                Front-end Developer
+            </p>
+            <h1>Hi, I'm  <br> <span>Hamna Mazher </span> </h1>
+            <p>As a dedicated developer with <br>a passion for crafting intuitive <br> and efficient software solutions, <br>  I thrive on transforming complex  <br>problems into seamless  <br>user experiences. </p>
+        </div>
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+<div class="container">
+   
+        <div class="about-col">
+            <!-- <img src="images/user.png" alt=""> -->
+
+            <h1 class="sub-title">About me</h1>
+            <p class="about-p">As a front-end developer with a strong foundation in HTML, CSS, and JavaScript, skilled in creating responsive and user-friendly web applications. Proficient in modern frameworks such as React and Angular, with a keen eye for design and attention to detail. Experienced in collaborating with designers and back-end developers to optimize user experience and ensure cross-browser compatibility. Passionate about staying updated with industry trends and best practices to deliver high-quality web solutions.</p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+                
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Languages</span> <br> HTML5,CSS3,Javascript</li>
+                    <li><span>Front-End Framework/Libraries</span> <br> React Js,Next Js,Bootstrap,Tailwind CSS,Vite</li>
+                    <li><span>Package Manager</span> <br> npm</li>
+                    <li><span>Tools & Softwares</span> <br> Git,VSCode</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Web Development</span> <br> Internship (June2024-August2024) </li> <br >Authorized by Prodigy InfoTech
+                    <li><span>Front-End Web Development</span> <br> Internship (Sep2023-Oct2023)</li>
+                    <br >Authorized by CodSoft
+                    
+                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>BS Software Engineering(2021-2025)</span> <br> Lahore College for Women University,Lahore</li>
+                    <li><span>ICS, Physics(2019-2021)</span> <br> Punjab Group of Colleges,Lahore</li>
+                    
+                </ul>
+            </div>
+        </div>
+      
+  
+</div>
+    </div>
+    <!-- services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Responsive Web Design</h2>
+            <p>As am front-end developer, I specialize in crafting responsive websites that provide an optimal viewing and interaction experience across a wide range of devices, from desktop computers to smartphones and tablets.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design Integration</h2>
+            <p> I closely work with UI/UX designers  to ensure the visual design is implemented correctly. They collaborate on technical aspects such as responsive design, animations, and interactive elements.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-gears"></i>
+            <h2>API Integration</h2>
+            <p>By intergrating API's, I empower web applications to access information from a server and using it in the user interface, enabling real-time data retrieval and creating dynamic user experiences.  </p>
+            <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- contact -->
+ <div id="contact">
+    <div class="container">
+     <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>hamnamazhar968@gmail.com</p>
+           
+            <div class="social-icons">
+          <a href="https://www.linkedin.com/in/hamna-mazher-6088b2276?"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Hamna-Mazher"><i class="fa-brands fa-github"></i></a>
+         
+            </div>
+            <a href="./images/Hamna_Mazher_Resume.pdf" download class="btn btn1">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form class="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="text" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn1">Submit</button>
+            </form>
+            
+        </div>
+     </div>
+    </div>
+<div class="copyright">
+    <p>Copyright © Hamna Mazher-2024</p>
+</div>
+ </div>
+
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwjMgY4I_UFim4zUs4rSnyYe7hbCFpKjDdf1SAcfC9t4e7ZIUzLJxQ_FbRpl5cVAUmXRw/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
